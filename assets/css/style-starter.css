@@ -4490,6 +4490,8 @@ input[type="button"].btn-block {
 }
 
 .nav-link {
+    font-family: "cc bold", Serif;
+    letter-spacing: .2rem;
     display: block;
     padding: 0.5rem 1rem;
 }
@@ -10762,7 +10764,7 @@ a.text-primary:focus {
 }
 
 .text-secondary {
-    color: #e71d36 !important;
+    color: var(--secondary-color) !important;
 }
 
 a.text-secondary:hover,
@@ -18580,6 +18582,7 @@ h4.small-text-banner {
 
 .cognito-banner h3 span {
     font-weight: 800;
+
 }
 
 .cognito-banner p {

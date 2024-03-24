@@ -14,8 +14,8 @@
     --white: #fff;
     --gray: #6c757d;
     --gray-dark: #343a40;
-    --primary: #ff4c4c;
-    --secondary: #e71d36;
+    --primary: #006D5B;
+    --secondary: #FFDE59;
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
@@ -2755,7 +2755,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #ff4c4c;
+    background-color: var(--primary);
     border: none;
 }
 
@@ -11100,7 +11100,8 @@ h6 {
 p {
     margin: 0;
     padding: 0;
-    font-size: 17px;
+    font-family: "solaimanlipi", "Raleway", serif;
+    font-size: 1.1rem;
     line-height: 28px;
     color: var(--font-color);
     font-weight: 500;
@@ -18469,6 +18470,7 @@ button.search-btn:hover {
 
 /* button style */
 .btn-style {
+    font-family: 'cc regular', 'Futura', serif;
     padding: 12px 36px;
     font-size: 16px;
     color: #fff;
@@ -18478,6 +18480,20 @@ button.search-btn:hover {
     outline: none;
     border: none;
     background: var(--primary-color);
+    transition: all 1.8s ease-in-out;
+}
+
+.btn-style-primary-light {
+    font-family: 'cc regular', 'Futura', serif;
+    padding: 12px 36px;
+    font-size: 16px;
+    color: var(--warning);
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 0.5rem 1rem rgb(16 16 16 / 14%);
+    outline: none;
+    border: none;
+    background: var(--primary);
     transition: all 1.8s ease-in-out;
 }
 
@@ -18582,7 +18598,6 @@ h4.small-text-banner {
 
 .cognito-banner h3 span {
     font-weight: 800;
-
 }
 
 .cognito-banner p {
@@ -19086,21 +19101,21 @@ h4.number {
 
 @-webkit-keyframes ripple {
     0% {
-        box-shadow: 0 0 0 0 #ffc2b4, 0 0 0 10px #ffc2b4, 0 0 0 20px #ffc2b4;
+        box-shadow: 0 0 0 0 #b9ffb4, 0 0 0 10px #b4ffce, 0 0 0 20px #ffeeb4;
     }
 
     100% {
-        box-shadow: 0 0 0 10px #ffc2b4, 0 0 0 20px #ffc2b4, 0 0 0 40px rgba(50, 100, 245, 0);
+        box-shadow: 0 0 0 10px #d2ffb4, 0 0 0 20px #b4ffbe, 0 0 0 40px rgba(50, 100, 245, 0);
     }
 }
 
 @keyframes ripple {
     0% {
-        box-shadow: 0 0 0 0 #ffc2b4, 0 0 0 10px #ffc2b4, 0 0 0 20px #ffc2b4;
+        box-shadow: 0 0 0 0 #b9ffb4, 0 0 0 10px #c7ffb4, 0 0 0 20px #c4ffb4;
     }
 
     100% {
-        box-shadow: 0 0 0 10px #ffc2b4, 0 0 0 20px #ffc2b4, 0 0 0 40px rgba(50, 100, 245, 0);
+        box-shadow: 0 0 0 10px #beffb4, 0 0 0 20px #c2ffb4, 0 0 0 40px rgba(50, 100, 245, 0);
     }
 }
 

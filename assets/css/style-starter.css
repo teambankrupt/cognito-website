@@ -1,5 +1,35 @@
 @charset "UTF-8";
 
+
+@font-face {
+    font-family: 'cc bold';
+    src: url("../fonts/charu_chandan_bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'cc light';
+    src: url('../fonts/charu_chandan_light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cc regular';
+    src: url('../fonts/charu_chandan_regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'solaimanlipi';
+    src: url('../fonts/SolaimanLipi_22-02-2012.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'solaimanlipi bold';
+    src: url('../fonts/SolaimanLipi_Bold_10-03-12.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'saraswati';
+    src: url('../fonts/Saraswatii_03-09-2005.ttf') format('truetype');
+}
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -17322,30 +17352,6 @@ p.white {
     src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
-@font-face {
-    font-family: 'cc bold';
-    src: url("../fonts/charu_chandan_bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: 'cc light';
-    src: url('../fonts/charu_chandan_light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cc regular';
-    src: url('../fonts/charu_chandan_regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'solaimanlipi';
-    src: url('../fonts/SolaimanLipi.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'saraswati';
-    src: url('../fonts/Saraswatii_03-09-2005.ttf') format('truetype');
-}
 
 .fa,
 .fas {
@@ -18814,7 +18820,7 @@ ul li {
     list-style-type: circle; /* Specify the bullet point style */
     text-align: left; /* Align the text to the left */
     padding-left: 20px; /* Add some padding to ensure the text doesn't touch the bullet */
-    font-family: "solaimanlipi", Serif;
+    font-family: "solaimanlipi", serif;
     font-size: 20px;
 }
 

@@ -18569,6 +18569,14 @@ h3.title-style {
     min-height: calc(100vh - 80px);
 }
 
+.cognito-servicesblock h4, h6 {
+    font-family: "cc bold", 'Futura', serif;
+}
+
+.home-services h4 {
+    font-family: "cc bold", 'Futura', serif;
+}
+
 /* .cognito-banner {
   background: url(../images/banner.png) no-repeat center;
   background-size: cover;
@@ -18802,7 +18810,7 @@ h4.small-text-banner {
     color: var(--primary-color);
 }
 
-.about-content ul li {
+ul li {
     list-style-type: circle; /* Specify the bullet point style */
     text-align: left; /* Align the text to the left */
     padding-left: 20px; /* Add some padding to ensure the text doesn't touch the bullet */

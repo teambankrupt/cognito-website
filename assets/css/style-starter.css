@@ -689,6 +689,14 @@ pre code {
     .container {
         max-width: 1140px;
     }
+
+    .cognito-banner p {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
 }
 
 .container-fluid,
@@ -10785,7 +10793,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-    color: #2ec4b6 !important;
+    color: var(--primary) !important;
 }
 
 a.text-primary:hover,
@@ -18616,7 +18624,6 @@ h4.small-text-banner {
 
 .cognito-banner p {
     font-family: "solaimanlipi", serif;
-    font-size: 24px;
     font-weight: 500;
 }
 
@@ -18633,9 +18640,20 @@ h4.small-text-banner {
     border-radius: 0 50px;
 }
 
-.tinted::after {
-    margin-left: -2em;
+.tinted-banner::after {
+    margin-left: -1em;
     border-radius: 0 50px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(76, 255, 214, 0.09); /* Change color and opacity here */
+}
+
+.tinted::after {
+    border-radius: 30px 30px;
     content: "";
     position: absolute;
     top: 0;
@@ -18821,7 +18839,6 @@ ul li {
     text-align: left; /* Align the text to the left */
     padding-left: 20px; /* Add some padding to ensure the text doesn't touch the bullet */
     font-family: "solaimanlipi", serif;
-    font-size: 20px;
 }
 
 .about-icon i {

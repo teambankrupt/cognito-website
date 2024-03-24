@@ -11033,7 +11033,7 @@ a.text-dark:focus {
 }
 
 [data-theme="dark"] {
-    --primary-color: #006D5B;
+    --primary-color: #50C878;
     --secondary-color: #ffde59;
     --font-color: #b7b7b7;
     --bg-color: #171717;
@@ -19011,8 +19011,8 @@ ul li {
     box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
 }
 
-.box-wrap:hover h4.number {
-    opacity: .2;
+.box-wrap:hover .package-cost {
+    opacity: 1;
     transition: 0.3s ease-in-out;
 }
 
@@ -19044,14 +19044,25 @@ a.read:hover {
     color: var(--primary-color);
 }
 
-h4.number {
+.package-cost {
+    font-family: "cc bold", serif;
+    color: var(--color-green);
     position: absolute;
     font-size: 60px;
     line-height: 60px;
     right: 40px;
     top: 30px;
-    opacity: .07;
-    transition: 0.3s ease-in-out;
+    opacity: .7;
+    /*transition: 0.3s ease-in-out;*/
+}
+
+.package-cost small {
+    font-size: 20px !important;
+    font-weight: 700;
+}
+
+h4.text {
+    font-size: 16px !important;
 }
 
 .search-box .icon {
@@ -19071,7 +19082,7 @@ h4.number {
 }
 
 @media (max-width: 415px) {
-    h4.number {
+    .package-cost {
         font-size: 50px;
     }
 }

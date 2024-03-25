@@ -20,6 +20,7 @@
     font-family: 'solaimanlipi';
     src: url('../fonts/SolaimanLipi_22-02-2012.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'solaimanlipi bold';
     src: url('../fonts/SolaimanLipi_Bold_10-03-12.ttf') format('truetype');

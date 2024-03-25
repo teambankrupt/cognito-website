@@ -272,16 +272,16 @@
                         লাভজনক করতে পারবেন তা বিস্তারিত জানতে চান?
                     </p>
                     <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
-                        <a class="btn btn-style-primary-light" href="mailto:info@cognitox.org?subject=ওয়েবসাইট থেকেঃ কগনিটো সফটওয়্যারের ব্যাপারে আগ্রহী&body=দয়া করে কিছু তথ্য দিয়ে সহযোগিতা করুনঃ %0D%0A %0D%0Aআপনার নামঃ %0D%0A%0D%0Aফোন নম্বরঃ %0D%0A %0D%0Aআপনার ব্যবসার ধরন/প্রকৃতিঃ">
-                            যোগাযোগ করুন
-                        </a>
-<!--                        <a class="btn btn-style" data-toggle="modal" data-target="#contactModal">যোগাযোগ করুন</a>-->
+<!--                        <a class="btn btn-style-primary-light" href="mailto:info@cognitox.org?subject=ওয়েবসাইট থেকেঃ কগনিটো সফটওয়্যারের ব্যাপারে আগ্রহী&body=দয়া করে কিছু তথ্য দিয়ে সহযোগিতা করুনঃ %0D%0A %0D%0Aআপনার নামঃ %0D%0A%0D%0Aফোন নম্বরঃ %0D%0A %0D%0Aআপনার ব্যবসার ধরন/প্রকৃতিঃ">-->
+<!--                            যোগাযোগ করুন-->
+<!--                        </a>-->
+                        <a id="contactBtn" class="btn btn-style">যোগাযোগ করুন</a>
                     </div>
                 </div>
 
             </div>
             <div class="col-xl-5 col-lg-6 offset-xl-1 mt-lg-0 mt-5 pt-lg-0 pt-5">
-                <h3 class="title-style">আমাদের প্রধান লক্ষ্য আপনার ব্যবসা বৃদ্ধিতে সহযোগীতা করা</h3>
+                <h3 class="title-style">আমাদের প্রধান লক্ষ্য আপনার ব্যবসা বৃদ্ধিতে সহযোগিতা করা</h3>
                 <p class="mt-lg-4 mt-3 mb-sm-5 mb-4">
                     ব্যবসাকে আরও বড় এবং বেশি লাভজনক করতে প্রয়োজন সঠিক সময়ে সঠিক সিদ্ধান্ত নেয়া। আমরা আপনার এ সিদ্ধান্ত
                     নেয়ার জায়গাটা সহজ করার চেষ্টায় নিয়োজিত।
@@ -308,7 +308,7 @@
                             <p>
                                 ইমেইলে পাবেন দৈনিক সেলস রিপোর্ট। কোন সেলসম্যান কতটুকু বিক্রি করেছে, টার্গেটের কতখানি
                                 পূরণ হয়েছে, কোন পণ্যে কত বিক্রি হয়েছে, কোন কাস্টমার কত টাকা বাকি আছে, সব।<br/>
-                                সেই সাথে প্রতিনিয়ত আর নতুন নতুন রিপোর্ট যুক্ত হচ্ছে আপনার সিদ্ধান্ত নেয়ার পদ্মতিটা সহজ
+                                সেই সাথে প্রতিনিয়ত আর নতুন নতুন রিপোর্ট যুক্ত হচ্ছে আপনার সিদ্ধান্ত নেয়ার পদ্ধতি সহজ
                                 করার প্রয়োজনে।
                             </p>
                         </div>
@@ -323,52 +323,57 @@
 <!-- Modal -->
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
      aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <form method="post" class="signin-form">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img src="assets/images/logo.svg" height="24"/> &nbsp; &nbsp;
-                    <h5 class="modal-title" id="contactModalLabel">দয়া করে কিছু তথ্য দিয়ে সহযোগিতা করুন</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="cognito-contact-info py-5" id="contact">
-                        <div class="container">
 
-                            <div class="form-inner-cont order-lg-2 order-1 mb-lg-0">
-                                <div class="form-input">
-                                    <input type="text" name="w3lName" id="w3lName" placeholder="আপনার নাম" required>
-                                </div>
-                                <div class="form-input">
-                                    <input type="tel" name="w3lSender" id="w3lSenderP" placeholder="ফোন নম্বর"
-                                           required="">
-                                </div>
+<!--        Src will be set by JS-->
+        <iframe id="cognitoIframe" class="modal-dialog modal-content"  style="height: 70%; width: 100%;"></iframe>
 
-                                <div class="form-input">
-                                    <input type="email" name="w3lSender" id="w3lSender" placeholder="ইমেইল"
-                                           required="">
-                                </div>
-                                <div class="form-input">
-                                    <textarea name="w3lMessage" id="w3lMessage" placeholder="আপনার ব্যবসার ধরন/প্রকৃতি"
-                                              required=""></textarea>
-                                </div>
-                                <!--                                        <div class="text-right">-->
-                                <!--                                            <button type="submit" class="btn btn-style btn-primary">Submit</button>-->
-                                <!--                                        </div>-->
-                            </div>
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <form method="post" class="signin-form">-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <img src="assets/images/logo.svg" height="24"/> &nbsp; &nbsp;-->
+<!--                    <h5 class="modal-title" id="contactModalLabel">দয়া করে কিছু তথ্য দিয়ে সহযোগিতা করুন</h5>-->
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <iframe src="http://localhost:4200/#/aq-campaigns/nvah47iyux/acquire?package_type=Planetary"></iframe>-->
+<!--                    <div class="cognito-contact-info py-5" id="contact">-->
+<!--                        <div class="container">-->
 
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </form>
-    </div>
+<!--                            <div class="form-inner-cont order-lg-2 order-1 mb-lg-0">-->
+<!--                                <div class="form-input">-->
+<!--                                    <input type="text" name="w3lName" id="w3lName" placeholder="আপনার নাম" required>-->
+<!--                                </div>-->
+<!--                                <div class="form-input">-->
+<!--                                    <input type="tel" name="w3lSender" id="w3lSenderP" placeholder="ফোন নম্বর"-->
+<!--                                           required="">-->
+<!--                                </div>-->
+
+<!--                                <div class="form-input">-->
+<!--                                    <input type="email" name="w3lSender" id="w3lSender" placeholder="ইমেইল"-->
+<!--                                           required="">-->
+<!--                                </div>-->
+<!--                                <div class="form-input">-->
+<!--                                    <textarea name="w3lMessage" id="w3lMessage" placeholder="আপনার ব্যবসার ধরন/প্রকৃতি"-->
+<!--                                              required=""></textarea>-->
+<!--                                </div>-->
+<!--                                &lt;!&ndash;                                        <div class="text-right">&ndash;&gt;-->
+<!--                                &lt;!&ndash;                                            <button type="submit" class="btn btn-style btn-primary">Submit</button>&ndash;&gt;-->
+<!--                                &lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>-->
+<!--                    <button type="submit" class="btn btn-primary">Save changes</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
 </div>
 
 <!-- home page service block -->
@@ -389,7 +394,7 @@
                     <span class="number package-cost">
                         ৳0<small>/মাসিক</small>
                     </span>
-                    <h4><a href="#url">পারমানবিক</a></h4>
+                    <h4><a href="#url">আণবিক</a></h4>
                     <ul>
                         <li>প্রতিষ্ঠানঃ <span>১ টি</span></li>
                         <li>শপঃ <span>১ টি</span></li>
@@ -397,7 +402,7 @@
                         <li>ফ্রি ইমেইলঃ <span>১০ টি/মাসিক</span></li>
                         <li>ট্রানজেকশন লিমিটঃ <span>১০,০০০/দৈনিক</span></li>
                     </ul>
-                    <a href="javascript:void(0);" class="btn btn-style mt-4">পছন্দ করুন</a>
+                    <a id="chooseBtnAtomic" href="javascript:void(0);" class="btn btn-style mt-4">পছন্দ করুন</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
@@ -416,7 +421,7 @@
                         <li>ফ্রি ইমেইলঃ <span>২০০ টি/মাসিক</span></li>
                         <li>ট্রানজেকশন লিমিটঃ <span>১০,০০,০০০/দিন</span></li>
                     </ul>
-                    <a href="#read" class="btn btn-style mt-4">পছন্দ করুন</a>
+                    <a id="chooseBtnPlanetary" href="#read" class="btn btn-style mt-4">পছন্দ করুন</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
@@ -435,7 +440,7 @@
                         <li>ফ্রি ইমেইলঃ <span>আনলিমিটেড</span></li>
                         <li>ট্রানজেকশন লিমিটঃ <span>আনলিমিটেড</span></li>
                     </ul>
-                    <a href="#read" class="btn btn-style mt-4">পছন্দ করুন</a>
+                    <a id="chooseBtnCosmic" href="#read" class="btn btn-style mt-4">পছন্দ করুন</a>
                 </div>
             </div>
 
@@ -558,6 +563,30 @@
 <button onclick="topFunction()" id="movetop" title="Go to top">
     <span class="fas fa-level-up-alt" aria-hidden="true"></span>
 </button>
+
+<script type="application/javascript">
+    document.getElementById('contactBtn').addEventListener('click', function() {
+        const src = "https://business.astha.app/bn-BN/#/aq-campaigns/UcihM4I6Yf/acquire";
+        document.getElementById('cognitoIframe').setAttribute('src', src);
+        $('#contactModal').modal('show');
+    });
+    document.getElementById('chooseBtnAtomic').addEventListener('click', function() {
+        const src = "https://business.astha.app/bn-BN/#/aq-campaigns/UcihM4I6Yf/acquire?package_type=Atomic";
+        document.getElementById('cognitoIframe').setAttribute('src', src);
+        $('#contactModal').modal('show');
+    });
+    document.getElementById('chooseBtnPlanetary').addEventListener('click', function() {
+        const src = "https://business.astha.app/bn-BN/#/aq-campaigns/UcihM4I6Yf/acquire?package_type=Planetary"
+        document.getElementById('cognitoIframe').setAttribute('src', src);
+        $('#contactModal').modal('show');
+    });
+    document.getElementById('chooseBtnCosmic').addEventListener('click', function() {
+        const src = "https://business.astha.app/bn-BN/#/aq-campaigns/UcihM4I6Yf/acquire?package_type=Cosmic"
+        document.getElementById('cognitoIframe').setAttribute('src', src);
+        $('#contactModal').modal('show');
+    });
+</script>
+
 <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {

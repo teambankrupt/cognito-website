@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+
     <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
@@ -82,25 +83,25 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">
-                            হোম <span class="sr-only">(current)</span>
+                        <a class="nav-link" href="#home" id="navHome">
+                            Home <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">ফিচারগুলো</a>
+                        <a class="nav-link" href="#features" id="navFeatures">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#packages">প্যাকেজ</a>
+                        <a class="nav-link" href="#packages" id="navPackages">Packages</a>
                     </li>
                     <!--                    <li class="nav-item">-->
                     <!--                        <a class="nav-link" href="#about-us">আমাদের সম্পর্কে</a>-->
                     <!--                    </li>-->
                     <li class="nav-item">
-                        <a class="nav-link" href="#whychooseus">যোগাযোগ</a>
+                        <a class="nav-link" href="#whychooseus" id="navContact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-primary" target="_blank"
-                           href="https://business.astha.app/bn-BN">লগিন</a>
+                           href="https://business.astha.app/bn-BN" id="navLogin">Login</a>
                     </li>
                     <!-- search button -->
                     <!--                    <div class="search-right ml-xl-3 ml-1 mr-xl-1">-->
@@ -144,14 +145,13 @@
         <div class="container pt-5 pb-md-4">
             <div class="row align-items-center py-4">
                 <div class="col-md-6 pr-lg-5">
-                    <h3 class="mb-lg-4 mb-3 title" id="cTitle">ব্যবসা হবে আরো বেশি <span>লাভজনক</span></h3>
-                    <p class="mr-5">
-                        ঝেড়ে ফেলুন পুরানো দিনের জীর্নতা। হিসেব নিকেশের যাতাকলে নিষ্পেষিত জীবনে শুরু করুন নতুন অধ্যায়।
-                        বেচাকেনা, হিসেব-নিকেশ, বাকি তুলতে অ্যালার্ট, সেলসম্যানের বিক্রির রেকর্ড, পণ্যের স্টক ম্যানেজ
-                        করা, সব একসাথে।
+                    <h3 class="mb-lg-4 mb-3 title" id="cTitle">Business will more <span>profitable</span></h3>
+                    <p class="mr-5" id="cShortDesc">
+                        Shake off the decay of bygone days. Embark on a rejuvenated life with the advent of accountancy.
+                        Buying and selling, accounting, alerting to pending dues, tracking sales records, managing product stock - all together.
                     </p>
                     <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
-                        <a class="btn btn-style" href="#features">দেখুন কিভাবে</a>
+                        <a class="btn btn-style" href="#features" id="btnSeeHow">See How</a>
                     </div>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-5 mb-lg-0 mb-5 right-banner-2 position-relative">
@@ -161,15 +161,15 @@
                     </div>
                     <div class="banner-style-1 d-flex align-items-center">
                         <i class="fas fa-chart-line green-clr-bg"></i>
-                        <h4>সেলস সফটওয়্যার (সিআরএম)</h4>
+                        <h4 id="tagSalesSoftware">Sales Software (CRM)</h4>
                     </div>
                     <div class="banner-style-1 banner-style-2 d-flex align-items-center">
                         <i class="fas fa-print primary-clr-bg"></i>
-                        <h4>পজ সিস্টেম</h4>
+                        <h4 id="tagPosSystem">POS System</h4>
                     </div>
                     <div class="banner-style-1 banner-style-3 d-flex align-items-center">
                         <i class="fas fa-chart-area green-clr-bg"></i>
-                        <h4>ইনভেন্টরি/স্টক ম্যানেজমেন্ট</h4>
+                        <h4 id="tagInventory">Inventory/Stock Management</h4>
                     </div>
                 </div>
             </div>
@@ -182,8 +182,8 @@
 <section id="features" class="about-section py-5">
     <div class="container py-lg-5 py-4">
         <div class="title-heading-w3 mx-auto text-center mb-sm-5 mb-4 pb-xl-4" style="max-width:600px">
-            <h3 class="title-style mb-2">কি আছে কগনিটো সফটওয়্যারে?</h3>
-            <p class="subtitle">কিভাবে আপনার ব্যবসাকে আরো বেশি লাভজনক করতে পারে?</p>
+            <h3 class="title-style mb-2" id="fTitle">What's in Cognito Software??</h3>
+            <p class="subtitle" id="fDesc">How can you make your business more profitable using Cognito?</p>
         </div>
         <div class="row justify-content-center text-center">
             <div class="col-lg-4 col-md-6">
@@ -192,13 +192,11 @@
                         <i class="fas fa-chart-line primary-clr-bg"></i>
                     </div>
                     <div class="about-content">
-                        <h5 class="mb-2"><a href="javascript:void(0);">স্মার্ট বেচাকেনাঃ মুক্তির স্বাদ!</a></h5>
+                        <h5 class="mb-2"><a href="javascript:void(0);" id="f1title1">Smart Selling: The taste of freedom!</a></h5>
                         <ul>
-                            <li>আপনার যাবতীয় বেচাকেনা করতে পারবেন এই সফটওয়্যারের মাধ্যমে, খুব সহজে, কয়েক ক্লিকে অথবা
-                                বারকোড স্ক্যানারের মাধ্যমে।
-                            </li>
-                            <li>হিসেব নিকেশের ঝামেলা থেকে মুক্তি, সফটওয়্যার করবে বেচাকেনার হিসেব।</li>
-                            <li>চাইলে কাস্টমারদের রিসিপ্ট দিতে পারবেন প্রতি সেলে।</li>
+                            <li id="f1li1">You can do your daily buying and selling through this software, very easily, with few clicks or barcode scanner.</li>
+                            <li id="f1li2">Remove the hassle of accounting, the software will take care of your accounting.</li>
+                            <li id="f1li3">You can provide receipts to customers per sale</li>
                         </ul>
                     </div>
                 </div>
@@ -209,11 +207,11 @@
                         <i class="fas fa-chart-pie green-clr-bg"></i>
                     </div>
                     <div class="about-content">
-                        <h5 class="mb-2"><a href="javascript:void(0);">পন্য স্টকঃ ভুলে যাওয়া বারন</a></h5>
+                        <h5 class="mb-2"><a href="javascript:void(0);" id="f2title1">Product Stock: Never forget</a></h5>
                         <ul>
-                            <li> আপনার শপে যেকোন মুহুর্তে, যেকোন প্রোডাক্টের কি পরিমান স্টক আছে।</li>
-                            <li>কোনটা স্টক করা প্রয়োজন।</li>
-                            <li>কোন প্রোডাক্ট কি পরিমান বিক্রি হচ্ছে সব দেখুন এক নজরে, একসাথে।</li>
+                            <li id="f2li1">At any time, you can see how much stock of any product is in your shop.</li>
+                            <li id="f2li2">Which product needs to be stocked.</li>
+                            <li id="f2li3">See at a glance which product is selling how much, all at once.Worried about pending dues? No more!</li>
                         </ul>
                     </div>
                 </div>
@@ -224,12 +222,12 @@
                         <i class="fas fa-money-bill primary-clr-bg"></i>
                     </div>
                     <div class="about-content">
-                        <h5 class="mb-2"><a href="javascript:void(0);">বাকি তোলার চিন্তা? আর না</a></h5>
+                        <h5 class="mb-2"><a href="javascript:void(0);" id="f3title1">If you sell on credit, auto SMS alert will be sent to the customer's phone.</a></h5>
                         <ul>
-                            <li>বাকিতে বিক্রি করলে অটো এসএমএস অ্যালার্ট যাবে কাস্টমারের ফোনে।</li>
-                            <li>আপনার কাস্টমারদের রেকর্ড রাখুন সযতনে।</li>
-                            <li>যেকোন মুহুর্তে কাস্টমাদেরকে নোটিফিকেশন পাঠান প্রোডাক্টের বিজ্ঞাপন দিতে।</li>
-                            <li>বিক্রির আগে যাচাই করতে চান কাস্টমারের পূর্বের আমলনামা? চিন্তা আর না!</li>
+                            <li id="f3li1">Keep records of your customers easily.</li>
+                            <li id="f3li2">Notify customers at any time to advertise products.</li>
+                            <li id="f3li3">Want to check the previous transaction of the customer before selling? No more worries!</li>
+                            <li id="f3li4">Are you running a business with salesmen?</li>
                         </ul>
                     </div>
                 </div>
@@ -240,14 +238,12 @@
                         <i class="fas fa-chart-bar green-clr-bg"></i>
                     </div>
                     <div class="about-content">
-                        <h5 class="mb-2"><a href="javascript:void(0);">সেলসম্যান রেখে ব্যবসা করছেন?</a></h5>
+                        <h5 class="mb-2"><a href="javascript:void(0);" id="f4title1">Software prevents human irregularities.</a></h5>
                         <ul>
-                            <li>অসাধুতা রুখতে সফটওয়্যারের বিকল্প নেই।</li>
-                            <li>কাজে ফাঁকি? মনিটর করুন যেকোন জায়গা থেকে।</li>
-                            <li>সেলসম্যানের টার্গেট সেট করা, তার কতখানি পূরণ হয়েছে সেগুলো ট্র্যাক রাখা এখন হাতের
-                                মুঠোয়।
-                            </li>
-                            <li>ইমেইলে দৈনিক সেলস রিপোর্ট।</li>
+                            <li id="f4li1">Your employees aren't doing their job properly? Monitor from anywhere.</li>
+                            <li id="f4li2">Set salesmen's targets, track how many of them have been fulfilled, now at your fingertips.</li>
+                            <li id="f4li3">Daily sales report by email.</li>
+                            <li id="f4li4"></li>
                         </ul>
                     </div>
                 </div>
@@ -258,13 +254,12 @@
                         <i class="fas fa-calendar-day primary-clr-bg"></i>
                     </div>
                     <div class="about-content">
-                        <h5 class="mb-2"><a href="javascript:void(0);">ভবিষ্যতে কোন পণ্য বেশি বিক্রি হতে পারে?</a></h5>
+                        <h5 class="mb-2"><a href="javascript:void(0);" id="f5title1">Need sales forecast?</a></h5>
                         <ul>
-                            <li>আগামি মাসের আগাম পূর্বাভাস, যাতে বেশি লাভজনক পণ্য স্টক করা যায়।</li>
-                            <li>সর্বাধিক লাভজনক পণ্য হিসেব করে বের করার প্রয়োজন নেই, সফটওয়্যারেই দেখে নিন।</li>
-                            <li>ব্যবসার উন্নতির বিবরণ, কাষ্টমারদের অবস্থা, ভাল-খারাপ কাষ্টমারের রেকর্ড রাখা সবই আছে।
-                            </li>
-                            <li>এসএমএস নোটিফিকেশন পাঠিয়ে বিজ্ঞাপন দিন যেকোন মুহূর্তে।</li>
+                            <li id="f5li1">Forecast of next month's sales, so that more profitable products can be stocked.</li>
+                            <li id="f5li2">No need to do calculations to find out the most profitable products, cognito will prepare them for you.</li>
+                            <li id="f5li3">Details of business growth, customer status, keeping records of good and bad customers, everything is there.Want to see a demo?</li>
+                            <li id="f5li4">Send SMS notifications to advertise at any time.</li>
                         </ul>
                     </div>
                 </div>
@@ -283,50 +278,49 @@
                     <img src="assets/images/cat.jpg" alt="" class="img-fluid radius-image">
                 </div>
                 <div class="imginfo__box">
-                    <h6 class="imginfo__title">ডেমো দেখতে চান?</h6>
-                    <p>
-                        নিজে ট্রাই করে দেখতে চান? <br/>কিংবা কিভাবে আপনার ব্যবসাকে কগনিটো সফটওয়্যার<br/> দিয়ে আরো
-                        লাভজনক করতে পারবেন তা বিস্তারিত জানতে চান?
+                    <h6 class="imginfo__title" id="contactTitle">Want to see a demo?</h6>
+                    <p id="contactDesc">
+                        Want to try it yourself?
+                        <br/>Or want to know how Cognito makes your business
+                        <br/> more profitable?
                     </p>
                     <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
                         <!--                        <a class="btn btn-style-primary-light" href="mailto:info@cognitox.org?subject=ওয়েবসাইট থেকেঃ কগনিটো সফটওয়্যারের ব্যাপারে আগ্রহী&body=দয়া করে কিছু তথ্য দিয়ে সহযোগিতা করুনঃ %0D%0A %0D%0Aআপনার নামঃ %0D%0A%0D%0Aফোন নম্বরঃ %0D%0A %0D%0Aআপনার ব্যবসার ধরন/প্রকৃতিঃ">-->
                         <!--                            যোগাযোগ করুন-->
                         <!--                        </a>-->
-                        <a id="contactBtn" class="btn btn-style">যোগাযোগ করুন</a>
+                        <a id="contactBtn" class="btn btn-style">Contact Us</a>
                     </div>
                 </div>
 
             </div>
             <div class="col-xl-5 col-lg-6 offset-xl-1 mt-lg-0 mt-5 pt-lg-0 pt-5">
-                <h3 class="title-style">আমাদের প্রধান লক্ষ্য আপনার ব্যবসা বৃদ্ধিতে সহযোগিতা করা</h3>
-                <p class="mt-lg-4 mt-3 mb-sm-5 mb-4">
-                    ব্যবসাকে আরও বড় এবং বেশি লাভজনক করতে প্রয়োজন সঠিক সময়ে সঠিক সিদ্ধান্ত নেয়া। আমরা আপনার এ সিদ্ধান্ত
-                    নেয়ার জায়গাটা সহজ করার চেষ্টায় নিয়োজিত।
+                <h3 class="title-style" id="cnTitle">Our goal is to help your business grow</h3>
+                <p class="mt-lg-4 mt-3 mb-sm-5 mb-4" id="cnDesc">
+                    To make the right decision, you need all kinds of information presented to you easily.
+                    We are committed to making the place where you make this decision easy.
 
                 </p>
                 <div class="two-grids mt-md-0 mt-md-5 mt-4">
                     <div class="grids_info">
                         <i class="fas fa-user-clock primary-clr-bg"></i>
                         <div class="detail">
-                            <h4>ব্যবসা-বান্ধব ড্যাশবোর্ড</h4>
-                            <p>
-                                সঠিক সিদ্ধান্ত নিতে যত ধরনের তথ্য প্রয়োজন, সহজভাবে আপনার কাছে উপস্থাপন করার জন্য আছে
-                                আমাদের ড্যাশবোর্ড।<br/>
-                                কোন পণ্যের স্টক কমে গিয়েছে? ড্যাশবোর্ডেই দেখে নিন এক নজরে।<br/>
-                                কোন পণ্যটি আপনার জন্য বেশি লাভজনক? কিংবা ভবিষ্যতে কোন পণ্য বেশি বিক্রি হতে পারে? সব
-                                দেখুন এক নজরে, সিদ্ধান্ত নিন সঠিক তথ্যের উপর নির্ভর করে।
+                            <h4 id="cn1Title">Business-friendly Dashboard</h4>
+                            <p id="cn1Desc">
+                                To make the right decision, you need all kinds of information presented to you easily in our dashboard.<br/>
+                                Stock is out for certain products? Just look at the dashboard<br/>
+                                Which products are more profitable for your business? or which products can sell better in future?
+                                See everything at a glance, make decisions based on accurate information.
                             </p>
                         </div>
                     </div>
                     <div class="grids_info mt-5">
                         <i class="fas fa-laptop-house green-clr-bg"></i>
                         <div class="detail">
-                            <h4>সেলস রিপোর্ট</h4>
-                            <p>
-                                ইমেইলে পাবেন দৈনিক সেলস রিপোর্ট। কোন সেলসম্যান কতটুকু বিক্রি করেছে, টার্গেটের কতখানি
-                                পূরণ হয়েছে, কোন পণ্যে কত বিক্রি হয়েছে, কোন কাস্টমার কত টাকা বাকি আছে, সব।<br/>
-                                সেই সাথে প্রতিনিয়ত আর নতুন নতুন রিপোর্ট যুক্ত হচ্ছে আপনার সিদ্ধান্ত নেয়ার পদ্ধতি সহজ
-                                করার প্রয়োজনে।
+                            <h4 id="cn2Title">Sales Report</h4>
+                            <p id="cn2Desc">
+                                You'll find daily sales report throw email. Sales volume for each salesperson, achievements for their sales targets,
+                                sales based on products, due report etc<br/>
+                                Lots of new reports are being added to make it easier for you to make decisions.
                             </p>
                         </div>
                     </div>
@@ -398,9 +392,9 @@
 <section class="home-services py-5" id="packages">
     <div class="container py-md-5 py-4">
         <div class="title-heading-w3 mx-auto text-center mb-sm-5 mb-4 pb-xl-4" style="max-width:600px">
-            <h3 class="title-style mb-2">প্যাকেজ</h3>
-            <p>
-                আপনার ব্যবসার প্রয়োজন অনুযায়ী যেকোন প্যাকেজ নির্বাচন করুন।
+            <h3 class="title-style mb-2" id="package">Package</h3>
+            <p  id="packageSelect">
+                Select Package based on your business needs
             </p>
         </div>
         <div class="row">
@@ -410,17 +404,17 @@
                         <i class="fas fa-laptop-code primary-clr-bg"></i>
                     </div>
                     <span class="number package-cost">
-                        ৳0<small>/মাসিক</small>
+                        ৳0<small id="monthly1">/monthly</small>
                     </span>
-                    <h4><a href="#url">আণবিক</a></h4>
+                    <h4><a href="#url"  id="atomic">Atomic</a></h4>
                     <ul>
-                        <li>প্রতিষ্ঠানঃ <span>১ টি</span></li>
-                        <li>শপঃ <span>১ টি</span></li>
-                        <li>ফ্রি এসএম এসঃ <span>৫ টি/মাসিক (রিফিল সহজলভ্য)</span></li>
-                        <li>ফ্রি ইমেইলঃ <span>১০ টি/মাসিক</span></li>
-                        <li>ট্রানজেকশন লিমিটঃ <span>১০,০০০/দৈনিক</span></li>
+                        <li  id="fOrg1">Organization: <span>1</span></li>
+                        <li  id="fShop1">Shops: <span>1</span></li>
+                        <li  id="fSms1">Free SMS <span>5/per month (Refill Available)</span></li>
+                        <li  id="fEmail1">Free Email <span>10/per month</span></li>
+                        <li  id="fTnxLimit1">Transaction Limit <span>$10k/per month</span></li>
                     </ul>
-                    <a id="chooseBtnAtomic" href="javascript:void(0);" class="btn btn-style mt-4">পছন্দ করুন</a>
+                    <a id="chooseBtnAtomic" href="javascript:void(0);" class="btn btn-style mt-4">Choose</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
@@ -429,17 +423,17 @@
                         <i class="fas fa-laptop-code primary-clr-bg"></i>
                     </div>
                     <h4 class="number package-cost">
-                        ৳৯৯৯<small>/মাসিক</small>
+                        ৳৯৯৯<small id="monthly2">/monthly</small>
                     </h4>
-                    <h4><a href="javascript:void(0);">প্ল্যানেটারি</a></h4>
+                    <h4><a href="javascript:void(0);" id="planetary">Planetary</a></h4>
                     <ul>
-                        <li>প্রতিষ্ঠানঃ <span>১ টি</span></li>
-                        <li>শপঃ <span>২ টি</span></li>
-                        <li>ফ্রি এসএম এসঃ <span>১০০ টি/মাসিক (রিফিল সহজলভ্য)</span></li>
-                        <li>ফ্রি ইমেইলঃ <span>২০০ টি/মাসিক</span></li>
-                        <li>ট্রানজেকশন লিমিটঃ <span>১০,০০,০০০/দিন</span></li>
+                        <li id="fOrg2">Organization: <span>1</span></li>
+                        <li id="fShop2">Shops: <span>2</span></li>
+                        <li id="fSms2">Free SMS <span>100/per month (Refill Available)</span></li>
+                        <li id="fEmail2">Free Email <span>200 /per month</span></li>
+                        <li id="fTnxLimit2">Transaction Limit <span>$1m/per day</span></li>
                     </ul>
-                    <a id="chooseBtnPlanetary" href="#read" class="btn btn-style mt-4">পছন্দ করুন</a>
+                    <a id="chooseBtnPlanetary" href="#read" class="btn btn-style mt-4">Choose</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
@@ -448,17 +442,17 @@
                         <i class="fas fa-laptop-code primary-clr-bg"></i>
                     </div>
                     <h4 class="number package-cost">
-                        --<small>যোগাযোগ</small>
+                        --<small id="contact">Contact</small>
                     </h4>
-                    <h4><a href="javascript:void(0);">কসমিক</a></h4>
+                    <h4><a href="javascript:void(0);" id="cosmic">Cosmic</a></h4>
                     <ul>
-                        <li>প্রতিষ্ঠানঃ <span>আনলিমিটেড</span></li>
-                        <li>শপঃ <span>আনলিমিটেড</span></li>
-                        <li>ফ্রি এসএম এসঃ <span>৫০০ টি/মাসিক (রিফিল সহজলভ্য)</span></li>
-                        <li>ফ্রি ইমেইলঃ <span>আনলিমিটেড</span></li>
-                        <li>ট্রানজেকশন লিমিটঃ <span>আনলিমিটেড</span></li>
+                        <li id="fOrg3">Organization: <span>Unlimited</span></li>
+                        <li id="fShop3">Shops: <span>Unlimited</span></li>
+                        <li id="fSms3">Free SMS <span>500/per month (Refill Available)</span></li>
+                        <li id="fEmail3">Free Email <span>Unlimited</span></li>
+                        <li id="fTnxLimit3">Transaction Limit <span>Unlimited</span></li>
                     </ul>
-                    <a id="chooseBtnCosmic" href="#read" class="btn btn-style mt-4">পছন্দ করুন</a>
+                    <a id="chooseBtnCosmic" href="#read" class="btn btn-style mt-4">Choose</a>
                 </div>
             </div>
 
@@ -472,12 +466,11 @@
     <div class="container py-md-5 py-4">
         <div class="row py-lg-4">
             <div class="col-lg-6 section-width align-self">
-                <h3 class="title-style pr-xl-5">ব্যবসার সফটওয়্যারে প্রয়োজন নির্ভরযোগ্যতা</h3>
-                <p class="mt-lg-4 mt-3 pb-3">
-                    যেকোন প্রতিষ্ঠানের সিস্টেম হতে হবে নির্ভরযোগ্য এবং সুরক্ষিত।
-                    কগনিটোর প্রতিটি ফিচার কঠোর মান-নিয়ন্ত্রন প্রসেসের মধ্যে দিয়ে যায়। কাজেই কগনিটো আপনার ব্যবসার জন্য
-                    অত্যান্ত নির্ভরযোগ্যতা একটি সিস্টেম।
-                    তাছাড়া যেকোন মুহুর্তে যেকোন প্রয়োজনে ২৪ ঘণ্টা আমাদের সাপোর্ট আপনাদের দোরগোড়ায়।
+                <h3 class="title-style pr-xl-5" id="bTitle">Business software needs reliability</h3>
+                <p class="mt-lg-4 mt-3 pb-3" id="bDesc">
+                    Every system of any organization must be reliable and secure. Cognito's every feature goes through a rigorous quality control process.
+                    That's why Cognito is a system that is extremely reliable for your business.
+                    In addition, our support is available 24 hours a day at your doorstep for any need at any time.
                 </p>
 
                 <!--                <a href="services.html" class="btn btn-style mt-4">যোগাযোগ</a>-->
@@ -580,6 +573,8 @@
 <!-- //footer -->
 
 <!-- Js scripts -->
+<script src="assets/js/locale-data.js"></script>
+
 <!-- move top -->
 <button onclick="topFunction()" id="movetop" title="Go to top">
     <span class="fas fa-level-up-alt" aria-hidden="true"></span>

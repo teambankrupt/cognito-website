@@ -4,6 +4,8 @@
 @font-face {
     font-family: 'cc bold';
     src: url("../fonts/charu_chandan_bold.ttf") format("truetype");
+    /* Specify unicode-range for Bengali script */
+    unicode-range: U+0980-09FF; /* Bengali Unicode Range */
 }
 
 @font-face {

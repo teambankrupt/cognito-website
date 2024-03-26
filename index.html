@@ -36,6 +36,23 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '197614705197773');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=197614705197773&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -127,7 +144,7 @@
         <div class="container pt-5 pb-md-4">
             <div class="row align-items-center py-4">
                 <div class="col-md-6 pr-lg-5">
-                    <h3 class="mb-lg-4 mb-3 title">ব্যবসা হবে আরো বেশি <span>লাভজনক</span></h3>
+                    <h3 class="mb-lg-4 mb-3 title" id="cTitle">ব্যবসা হবে আরো বেশি <span>লাভজনক</span></h3>
                     <p class="mr-5">
                         ঝেড়ে ফেলুন পুরানো দিনের জীর্নতা। হিসেব নিকেশের যাতাকলে নিষ্পেষিত জীবনে শুরু করুন নতুন অধ্যায়।
                         বেচাকেনা, হিসেব-নিকেশ, বাকি তুলতে অ্যালার্ট, সেলসম্যানের বিক্রির রেকর্ড, পণ্যের স্টক ম্যানেজ

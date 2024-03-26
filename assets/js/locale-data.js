@@ -1,8 +1,9 @@
 const languages = {
     en: {
         cTitle: "Business will more <span>profitable</span>",
-        cShortDesc: `Shake off the decay of bygone days. Embark on a rejuvenated life with the advent of accountancy. 
-        Buying and selling, accounting, alerting to pending dues, tracking sales records, managing product stock - all together.`,
+        cShortDesc: `Still following old style business process? Start a new chapter in your life with Cognito.
+                     Make your business more profitable by reducing the hassle of manually handling your inventory, sales, accounting. 
+                     Manage your business in a modern and efficient way.`,
         btnSeeHow: "See How",
         tagSalesSoftware: "Sales Software (CRM)",
         tagPosSystem: "POS System",

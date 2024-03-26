@@ -60,6 +60,7 @@ const languages = {
         monthly1: "/monthly",
         monthly2: "/monthly",
         contact: "Contact",
+        price2: "$9.99",
 
         chooseBtnAtomic: "Choose",
         chooseBtnPlanetary: "Choose",
@@ -160,6 +161,7 @@ const languages = {
         monthly1: "/মাসিক",
         monthly2: "/মাসিক",
         contact: "যোগাযোগ",
+        price2: "৳৯৯৯",
 
         chooseBtnAtomic: "পছন্দ করুন",
         chooseBtnPlanetary: "পছন্দ করুন",
@@ -214,8 +216,6 @@ function resolve(lang, key) {
         return languages.bn[key]
     }
 }
-
-console.log(lang)
 
 document.getElementById("cTitle").innerHTML = resolve(lang, "cTitle")
 document.getElementById("cShortDesc").innerHTML = resolve(lang, "cShortDesc")
@@ -302,3 +302,57 @@ document.getElementById("navFeatures").innerHTML = resolve(lang, "navFeatures")
 document.getElementById("navPackages").innerHTML = resolve(lang, "navPackages")
 document.getElementById("navContact").innerHTML = resolve(lang, "navContact")
 document.getElementById("navLogin").innerHTML = resolve(lang, "navLogin")
+document.getElementById("price2").innerHTML = resolve(lang, "price2")
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const titleFontBold = lang !== 'en'? "'cc bold', serif" : "'Poppins', serif";
+        const titleFontRegular = lang !== 'en'? "'cc regular', serif" : "''Poppins', sans-serif'";
+        const bodyFont = lang !== 'en'? "'solaimanlipi', serif" : "''Poppins', sans-serif'";
+        // Select all h4 and h6 elements within .cognito-servicesblock
+        const titleBoldElements = document.querySelectorAll(
+            `
+            .cognito-servicesblock h4, 
+            .cognito-servicesblock h6,
+            .home-services h4,
+            .package-cost
+        `
+        );
+
+        const titleRegularElements = document.querySelectorAll(
+            `
+            h3.title-style, 
+            .cognito-banner h3,
+            .nav-link ,
+            .about-content h5 a,
+            .btn-style,
+            .btn-style-primary-light    
+        `
+        );
+
+        const regularElements = document.querySelectorAll(
+            `
+            .cognito-banner p,
+            ul li,
+            p
+        `
+        );
+
+
+        // Apply font only to Bengali text
+        titleBoldElements.forEach(function(element) {
+            element.style.fontFamily = titleFontBold;
+            // element.innerHTML = "Hello world"
+        });
+
+        titleRegularElements.forEach(function(element) {
+            element.style.fontFamily = titleFontRegular;
+            // element.innerHTML = "Hello world"
+        });
+
+        regularElements.forEach(function(element) {
+            element.style.fontFamily = bodyFont;
+            // element.innerHTML = "Hello world"
+        });
+    });
+

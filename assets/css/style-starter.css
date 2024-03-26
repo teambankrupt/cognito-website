@@ -4,8 +4,6 @@
 @font-face {
     font-family: 'cc bold';
     src: url("../fonts/charu_chandan_bold.ttf") format("truetype");
-    /* Specify unicode-range for Bengali script */
-    unicode-range: U+0980-09FF; /* Bengali Unicode Range */
 }
 
 @font-face {
@@ -4531,7 +4529,7 @@ input[type="button"].btn-block {
 }
 
 .nav-link {
-    font-family: "cc regular", Serif;
+    /*font-family: "cc regular", Serif;*/
     letter-spacing: .2rem;
     display: block;
     padding: 0.5rem 1rem;
@@ -11141,7 +11139,7 @@ h6 {
 p {
     margin: 0;
     padding: 0;
-    font-family: "solaimanlipi", "Raleway", serif;
+    /*font-family: "solaimanlipi", "Raleway", serif;*/
     font-size: 1.1rem;
     line-height: 28px;
     color: var(--font-color);
@@ -18487,7 +18485,7 @@ button.search-btn:hover {
 
 /* button style */
 .btn-style {
-    font-family: 'cc regular', 'Futura', serif;
+    /*font-family: 'cc regular', 'Futura', serif;*/
     padding: 12px 36px;
     font-size: 16px;
     color: #fff;
@@ -18501,7 +18499,7 @@ button.search-btn:hover {
 }
 
 .btn-style-primary-light {
-    font-family: 'cc regular', 'Futura', serif;
+    /*font-family: 'cc regular', 'Futura', serif;*/
     padding: 12px 36px;
     font-size: 16px;
     color: var(--warning);
@@ -18534,7 +18532,7 @@ title-style
 }
 
 h3.title-style {
-    font-family: "cc regular", Serif;
+    /*font-family: "cc regular", serif;*/
     font-size: 35px;
     line-height: 45px;
     font-weight: 700;
@@ -18586,13 +18584,13 @@ h3.title-style {
     min-height: calc(100vh - 80px);
 }
 
-.cognito-servicesblock h4, h6 {
-    font-family: "cc bold", 'Futura', serif;
-}
+/*.cognito-servicesblock h4, h6 {*/
+/*    font-family: "cc bold", 'Futura', serif;*/
+/*}*/
 
-.home-services h4 {
-    font-family: "cc bold", 'Futura', serif;
-}
+/*.home-services h4 {*/
+/*    font-family: "cc bold", 'Futura', serif;*/
+/*}*/
 
 /* .cognito-banner {
   background: url(../images/banner.png) no-repeat center;
@@ -18614,7 +18612,7 @@ h4.small-text-banner {
 }
 
 .cognito-banner h3 {
-    font-family: 'cc regular', serif;
+    /*font-family: 'cc regular', serif;*/
     font-size: 42px;
     line-height: 52px;
     font-weight: 300;
@@ -18626,7 +18624,7 @@ h4.small-text-banner {
 }
 
 .cognito-banner p {
-    font-family: "solaimanlipi", serif;
+    /*font-family: "solaimanlipi", serif;*/
     font-weight: 500;
 }
 
@@ -18826,7 +18824,7 @@ h4.small-text-banner {
 }
 
 .about-content h5 a {
-    font-family: "cc regular", Serif;
+    /*font-family: "cc regular", Serif;*/
     font-weight: 700;
     color: var(--heading-color);
     font-size: 24px;
@@ -18841,7 +18839,7 @@ ul li {
     list-style-type: circle; /* Specify the bullet point style */
     text-align: left; /* Align the text to the left */
     padding-left: 20px; /* Add some padding to ensure the text doesn't touch the bullet */
-    font-family: "solaimanlipi", serif;
+    /*font-family: "solaimanlipi", serif;*/
 }
 
 .about-icon i {
@@ -19048,7 +19046,7 @@ a.read:hover {
 }
 
 .package-cost {
-    font-family: "cc bold", serif;
+    /*font-family: "cc bold", serif;*/
     color: var(--color-green);
     position: absolute;
     font-size: 60px;

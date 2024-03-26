@@ -1,8 +1,8 @@
 const languages = {
     en: {
         cTitle: "Business will more <span>profitable</span>",
-        cShortDesc: `Still following old style business process? Start a new chapter in your life with Cognito.
-                     Make your business more profitable by reducing the hassle of manually handling your inventory, sales, accounting. 
+        cShortDesc: `Still following old style business process? Start a new chapter with Cognito, 
+                     make your business more profitable by reducing the hassle of manually handling your inventory, sales, accounting. 
                      Manage your business in a modern and efficient way.`,
         btnSeeHow: "See How",
         tagSalesSoftware: "Sales Software (CRM)",

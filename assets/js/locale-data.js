@@ -61,6 +61,7 @@ const languages = {
         monthly1: "/monthly",
         monthly2: "/monthly",
         contact: "Contact",
+        price1: "$0.99",
         price2: "$9.99",
 
         chooseBtnAtomic: "Choose",
@@ -162,6 +163,7 @@ const languages = {
         monthly1: "/মাসিক",
         monthly2: "/মাসিক",
         contact: "যোগাযোগ",
+        price1: "৳৯৯",
         price2: "৳৯৯৯",
 
         chooseBtnAtomic: "পছন্দ করুন",
@@ -303,6 +305,7 @@ document.getElementById("navFeatures").innerHTML = resolve(lang, "navFeatures")
 document.getElementById("navPackages").innerHTML = resolve(lang, "navPackages")
 document.getElementById("navContact").innerHTML = resolve(lang, "navContact")
 document.getElementById("navLogin").innerHTML = resolve(lang, "navLogin")
+document.getElementById("price1").innerHTML = resolve(lang, "price1")
 document.getElementById("price2").innerHTML = resolve(lang, "price2")
 
 

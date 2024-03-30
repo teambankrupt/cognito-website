@@ -210,8 +210,8 @@ const languages = {
 
 
 const urlParams = new URLSearchParams(window.location.search);
-// const lang = urlParams.get('lang');
-const lang = "bn";
+const lang = urlParams.get('lang');
+// const lang = "bn";
 
 function resolve(lang, key) {
     if (lang === 'en') {

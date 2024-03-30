@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Meta Pixel Code -->
     <script>
@@ -346,7 +347,10 @@
      aria-hidden="true">
 
     <!--        Src will be set by JS-->
-    <img id="iframeLoading" src="assets/images/loading.svg" alt="loading.." style="height: 10%; width: 10%; left: 0;right: 0; top: 50%; margin: auto">
+    <div id="iframeLoading" class="centered">
+        <img src="assets/images/loading.svg" alt="loading.."  >
+        <h3 class="text-warning mt-4">Please wait..</h3>
+    </div>
     <iframe id="cognitoIframe" class="modal-dialog modal-content" style="height: 70%; width: 100%;"></iframe>
 
     <!--    <div class="modal-dialog" role="document">-->
@@ -443,7 +447,7 @@
                         <li id="fEmail2">Free Email <span>200 /per month</span></li>
                         <li id="fTnxLimit2">Transaction Limit <span>$1m/per day</span></li>
                     </ul>
-                    <a id="chooseBtnPlanetary" href="#read" class="btn btn-style mt-4">Choose</a>
+                    <a id="chooseBtnPlanetary" href="javascript:void(0);" class="btn btn-style mt-4">Choose</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
@@ -462,7 +466,7 @@
                         <li id="fEmail3">Free Email <span>Unlimited</span></li>
                         <li id="fTnxLimit3">Transaction Limit <span>Unlimited</span></li>
                     </ul>
-                    <a id="chooseBtnCosmic" href="#read" class="btn btn-style mt-4">Choose</a>
+                    <a id="chooseBtnCosmic" href="javascript:void(0);" class="btn btn-style mt-4">Choose</a>
                 </div>
             </div>
 
@@ -584,6 +588,7 @@
 
 <!-- Js scripts -->
 <script src="assets/js/locale-data.js"></script>
+<script src="assets/js/custom.js"></script>
 
 <!-- move top -->
 <button onclick="topFunction()" id="movetop" title="Go to top">
